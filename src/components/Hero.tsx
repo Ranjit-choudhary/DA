@@ -39,7 +39,6 @@ const Hero = () => {
       {/* Main Title */}
       <div className="relative z-10 text-center space-y-4 pointer-events-none flex-1 flex items-center justify-center">
         <h1 className="hero-title flex items-center gap-2 justify-center">
-          <MousePointer className="w-10 h-10" />
           <span>Designer Anonymous</span>
         </h1>
       </div>
