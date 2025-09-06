@@ -17,7 +17,7 @@ const images = [
   "/images/active/13.webp",
   "/images/active/14.webp",
   "/images/active/15.webp",
-  "/images/active/16.png",
+  "/images/active/16.webp",
 ];
 
 const Hero = () => {

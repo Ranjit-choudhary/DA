@@ -13,7 +13,7 @@ const About = () => {
             About Designer Anonymous
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A creative design club at BITS Pilani Hyderabad Campus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </section>
@@ -28,13 +28,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p className="text-lg leading-relaxed">
-                  Designer Anonymous is a student-run club at BITS Pilani Hyderabad Campus, founded in 2008 with a simple belief: design is about people. Every project we undertake, every event we create, and every workshop we facilitate centers around human connection and authentic storytelling.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Over the years, we've grown from a small collective of creatives into a recognized force in the design community on campus. But our core philosophy remains unchanged – we design for people, with people, and because of people.
+                  Cras venenatis euismod malesuada. Nullam ac erat ante. Integer feugiat, augue ac sollicitudin dictum, massa justo cursus urna, at dictum purus elit sed felis.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Our work spans across various disciplines including brand identity, event design, print media, and digital experiences. We believe in the power of collaboration and the magic that happens when diverse minds come together.
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                 </p>
               </div>
             </div>
@@ -43,7 +43,7 @@ const About = () => {
               <div className="p-8 rounded-lg bg-card border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Philosophy</h3>
                 <p className="text-muted-foreground">
-                  "Design is not just what it looks like and feels like. Design is how it works – and more importantly, how it connects people."
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor.
                 </p>
               </div>
               
@@ -78,7 +78,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              These principles guide every decision we make and every project we undertake.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
             </p>
           </div>
           
@@ -89,7 +89,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground">Collaboration</h3>
               <p className="text-muted-foreground">
-                We believe the best ideas come from working together, combining different perspectives and expertise.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
             
@@ -99,7 +99,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground">Innovation</h3>
               <p className="text-muted-foreground">
-                We push boundaries and explore new possibilities while respecting timeless design principles.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
               </p>
             </div>
             
@@ -109,7 +109,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground">Authenticity</h3>
               <p className="text-muted-foreground">
-                Every project reflects genuine human stories and meaningful connections.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate.
               </p>
             </div>
           </div>

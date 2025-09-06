@@ -1,11 +1,12 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import { Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-12 px-6">
         <div className="container mx-auto text-center">
@@ -21,87 +22,15 @@ const Contact = () => {
       {/* Contact Section */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             
-            {/* Contact Form */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">
-                  Start a Conversation
-                </h2>
-                <p className="text-muted-foreground">
-                  Tell us about your project, and we'll get back to you within 24 hours.
-                </p>
-              </div>
-              
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      First Name
-                    </label>
-                    <input 
-                      type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Last Name
-                    </label>
-                    <input 
-                      type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="Doe"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Email Address
-                  </label>
-                  <input 
-                    type="email"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="john@example.com"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Project Type
-                  </label>
-                  <select className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-                    <option>Select a project type</option>
-                    <option>Brand Identity</option>
-                    <option>Event Design</option>
-                    <option>Workshop Organization</option>
-                    <option>Print Design</option>
-                    <option>Digital Design</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Project Description
-                  </label>
-                  <textarea 
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                    placeholder="Tell us about your project, timeline, and any specific requirements..."
-                  ></textarea>
-                </div>
-                
-                <button 
-                  type="submit"
-                  className="w-full bg-primary text-primary-foreground py-3 px-6 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-200"
-                >
-                  Send Message
-                </button>
-              </form>
+            {/* Team Photo */}
+            <div>
+              <img 
+                src="/team.webp" 
+                alt="Designer Anonymous Team"
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
+              />
             </div>
             
             {/* Contact Information */}
@@ -118,45 +47,22 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">📧</span>
+                    <span className="text-primary text-xl">📧</span>
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground">Email</h3>
-                    <p className="text-muted-foreground">hello@designeranonymous.com</p>
+                    <p className="text-muted-foreground">designclub@hyderabad.bits-pilani.ac.in</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">📱</span>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">📍</span>
+                    <span className="text-primary text-xl">📍</span>
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground">Location</h3>
                     <p className="text-muted-foreground">
-                      New York City<br />
-                      Available for remote work worldwide
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">⏰</span>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-foreground">Response Time</h3>
-                    <p className="text-muted-foreground">
-                      We typically respond within 24 hours during business days
+                      BITS Pilani, Hyderabad Campus
                     </p>
                   </div>
                 </div>
@@ -166,14 +72,8 @@ const Contact = () => {
               <div className="pt-8">
                 <h3 className="text-xl font-bold text-foreground mb-4">Follow Our Journey</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
-                    <span>📷</span>
-                  </a>
-                  <a href="#" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
-                    <span>🐦</span>
-                  </a>
-                  <a href="#" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
-                    <span>💼</span>
+                  <a href="https://www.instagram.com/da.bphc/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
+                    <Instagram />
                   </a>
                 </div>
               </div>
@@ -188,3 +88,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

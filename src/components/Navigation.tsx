@@ -33,7 +33,7 @@ const Navigation = () => {
 
         {/* Copyright */}
         <div className="text-sm text-muted-foreground">
-          © 2024
+          © 2008
         </div>
       </div>
     </nav>
