@@ -57,8 +57,9 @@ const Hero = () => {
       {/* Main Title */}
       <div className="relative z-10 text-center space-y-4 pointer-events-none flex-1 flex items-center justify-center">
         {imagesLoaded ? (
-         <h1 className="hero-title flex items-center gap-2 justify-center py-4">
-  <span>Designers Anonymous</span>
+         <h1 className="hero-title flex flex-col items-center justify-center py-4 text-focus-in">
+  <span>DESIGNERS </span>
+    <span> ANONYMOUS</span>
 </h1>
         ) : (
           <div className="text-2xl text-muted-foreground">Loading...</div>

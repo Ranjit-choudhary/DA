@@ -4,7 +4,7 @@ import { Instagram } from "lucide-react";
 
 interface WorkItem {
   id: number;
-  category: "Events" | "Designs" | "Workshops";
+  category: "Graphic" | "UI/UX" | "3D";
   image: string;
   name: string;
   instaLink: string;
@@ -12,25 +12,121 @@ interface WorkItem {
 
 // Use direct paths for public folder images
 const workItems: WorkItem[] = [
-  { id: 1, category: "Designs", image: "/images/active/1.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 2, category: "Events", image: "/images/active/2.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 3, category: "Designs", image: "/images/active/3.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 4, category: "Events", image: "/images/active/4.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 5, category: "Workshops", image: "/images/active/5.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 6, category: "Events", image: "/images/active/6.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 7, category: "Events", image: "/images/active/7.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 8, category: "Events", image: "/images/active/8.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 9, category: "Events", image: "/images/active/9.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 10, category: "Events", image: "/images/active/10.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 11, category: "Workshops", image: "/images/active/11.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 12, category: "Workshops", image: "/images/active/12.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 13, category: "Workshops", image: "/images/active/13.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 14, category: "Workshops", image: "/images/active/14.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-  { id: 15, category: "Designs", image: "/images/active/15.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
-   { id: 16, category: "Designs", image: "/images/active/16.webp", name: "Da", instaLink: "https://www.instagram.com/_ranjit_choudhary_/" },
+  {
+    id: 1,
+    category: "Graphic",
+    image: "/images/active/1.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 2,
+    category: "UI/UX",
+    image: "/images/active/2.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 3,
+    category: "Graphic",
+    image: "/images/active/3.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 4,
+    category: "UI/UX",
+    image: "/images/active/4.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 5,
+    category: "3D",
+    image: "/images/active/5.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 6,
+    category: "3D",
+    image: "/images/active/6.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 7,
+    category: "UI/UX",
+    image: "/images/active/7.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 8,
+    category: "UI/UX",
+    image: "/images/active/8.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 9,
+    category: "3D",
+    image: "/images/active/9.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 10,
+    category: "3D",
+    image: "/images/active/10.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 11,
+    category: "3D",
+    image: "/images/active/11.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 12,
+    category: "3D",
+    image: "/images/active/12.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 13,
+    category: "3D",
+    image: "/images/active/13.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 14,
+    category: "3D",
+    image: "/images/active/14.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 15,
+    category: "Graphic",
+    image: "/images/active/15.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
+  {
+    id: 16,
+    category: "Graphic",
+    image: "/images/active/16.webp",
+    name: "Ranjit",
+    instaLink: "https://www.instagram.com/_ranjit_choudhary_/",
+  },
 ];
 
-const categories = ["All", "Events", "Designs", "Workshops"] as const;
+const categories = ["All", "Graphic", "UI/UX", "3D"] as const;
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState<
@@ -51,8 +147,8 @@ const Work = () => {
           Our Work
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          A collection of our creative projects, events, and workshops spanning
-          over a decade of design excellence.
+          A collection of our creative projects, spanning across graphic
+          design, UI/UX, and 3D art.
         </p>
       </section>
 
@@ -94,9 +190,7 @@ const Work = () => {
                   >
                     <Instagram size={24} />
                   </a>
-                  <span className="text-white font-semibold">
-                    {item.name}
-                  </span>
+                  <span className="text-white font-semibold">{item.name}</span>
                 </div>
               </div>
             ))}

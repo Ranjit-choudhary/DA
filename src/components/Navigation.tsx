@@ -15,26 +15,36 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "nav-glass" : "bg-transparent"
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "nav-glass" : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold text-foreground hover:opacity-80 transition-opacity">
+        <Link
+          to="/"
+          className="text-xl font-bold text-foreground hover:opacity-80 transition-opacity"
+        >
           DA BPHC
         </Link>
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/work" className="nav-link">Work</Link>
-          <Link to="/about" className="nav-link">About</Link>
-          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/work" className="nav-link">
+            Work
+          </Link>
+          <Link to="/about" className="nav-link">
+            About
+          </Link>
+          <Link to="/events" className="nav-link">
+            Events
+          </Link>{" "}
+          {/* Add this line */}
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
         </div>
-
-        {/* Copyright */}
-        {/* <div className="text-sm text-muted-foreground">
-          
-        </div> */}
       </div>
     </nav>
   );

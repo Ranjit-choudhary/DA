@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -13,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        "druk-wide-heavy": ['"Druk Wide Heavy"', "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -105,7 +113,8 @@ export default {
         "image-stack": {
           "0%": {
             opacity: "0",
-            transform: "perspective(1000px) rotateX(15deg) rotateY(-15deg) scale(0.9)",
+            transform:
+              "perspective(1000px) rotateX(15deg) rotateY(-15deg) scale(0.9)",
           },
           "100%": {
             opacity: "0.8",

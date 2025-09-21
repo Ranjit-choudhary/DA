@@ -7,13 +7,13 @@
 @layer base {
   :root {
     /* Core Dark Theme Colors */
-    --background: 0 0% 4%;
+   --background: 0 0% 7%; /* Changed to #111111 */
     --foreground: 0 0% 95%;
 
     /* Card and Surface Colors */
-    --card: 0 0% 7%;
+    --card: 0 0% 10%; /* Adjusted for new background */
     --card-foreground: 0 0% 92%;
-    --card-hover: 0 0% 10%;
+    --card-hover: 0 0% 12%; /* Adjusted for new background */
 
     /* Interactive Elements */
     --primary: 0 0% 95%;
@@ -72,6 +72,46 @@
 }
 
 @layer components {
+  .member-card {
+    @apply relative overflow-hidden rounded-lg bg-neutral-900 p-8 text-center transition-all duration-300;
+    border: 1px solid transparent;
+  }
+
+  .member-card:hover {
+    transform: scale(1.02);
+  }
+
+  .member-card .glow {
+    @apply absolute -inset-px -z-10 rounded-lg opacity-0 transition-opacity duration-300;
+    content: "";
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #e1f11e 0%,
+      #33ff57 25%,
+      #3357ff 50%,
+      #ff33a8 75%,
+      #e1f11e 100%
+    );
+    animation: rotate-gradient 4s linear infinite;
+  }
+
+  .member-card:hover .glow {
+    @apply opacity-100;
+  }
+
+  .member-card .inner {
+    @apply absolute inset-px rounded-lg bg-neutral-900;
+    z-index: -1;
+  }
+
+  @keyframes rotate-gradient {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   /* Hero Section Styles */
   .hero-container {
     @apply relative min-h-screen bg-background;
@@ -143,17 +183,20 @@
 
   /* Typography */
 .hero-title {
-  @apply text-6xl md:text-8xl font-black tracking-tight;
+  @apply font-black tracking-tighter;
+  font-family: "Druk Wide Heavy", sans-serif;
+  font-size: 9rem; /* Adjusted font size */
+  line-height: 0.9; /* Adjusted line height for a tighter fit */
+  text-align: center;
   background: linear-gradient(
-    to right,
-    hsl(var(--muted-foreground)) 50%,
-    hsl(var(--foreground)) 50%
+    to left,
+    #e1f11e 50%,
+    hsl(var(--muted-foreground)) 50%
   );
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  white-space: nowrap;
   animation: text-reveal 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
