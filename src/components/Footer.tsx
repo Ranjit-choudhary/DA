@@ -35,7 +35,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="pt-8 text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Designers Anonymous BPHC. All rights
+            © {new Date().getFullYear()} Designers Anonymous BPHC. All rights 
             reserved.
           </div>
         </div>
