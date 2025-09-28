@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="space-y-4">
           <h3 className="text-2xl font-bold text-foreground">
-            Designer Anonymous
+            Designers Anonymous
           </h3>
           <div className="flex justify-center space-x-8 text-sm text-muted-foreground">
             <Link
