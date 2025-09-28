@@ -22,9 +22,9 @@
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 85%;
     
-    --accent: 210 100% 60%;
+    --accent: 54 90% 50%;
     --accent-foreground: 0 0% 4%;
-    --accent-muted: 210 50% 30%;
+    --accent-muted: 54 50% 30%;
 
     /* Text Hierarchy */
     --muted: 0 0% 15%;
@@ -33,7 +33,7 @@
     /* Borders and Inputs */
     --border: 0 0% 15%;
     --input: 0 0% 12%;
-    --ring: 210 100% 60%;
+    --ring: 54 90% 50%;
 
     /* Navigation */
     --nav-background: 0 0% 4% / 0.8;
@@ -41,7 +41,7 @@
 
     /* Hover States */
     --hover-lift: 0 0% 8%;
-    --hover-glow: 210 100% 60% / 0.1;
+    --hover-glow: 54 90% 50% / 0.1;
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,7 +49,7 @@
 
     /* Shadows */
     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 40px hsl(210 100% 60% / 0.2);
+    --shadow-glow: 0 0 40px hsl(54 90% 50% / 0.2);
     --shadow-card-hover: 0 10px 40px rgba(0, 0, 0, 0.4);
 
     --radius: 1rem;
@@ -200,7 +200,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: text-reveal 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-reveal 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
   .hero-subtitle {
@@ -245,6 +245,19 @@
 
   .grid-fade-in {
     @apply animate-in fade-in duration-500;
+  }
+  .page-title {
+    @apply text-5xl md:text-6xl font-bold text-foreground mb-6;
+    background: linear-gradient(
+      to left,
+      #e1f11e 50%,
+      hsl(var(--muted-foreground)) 50%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: text-reveal 5.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 }
 body {

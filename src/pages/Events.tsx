@@ -46,7 +46,7 @@ const Events = () => {
       <Navigation />
 
       <section className="pt-24 pb-12 px-6 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+        <h1 className="page-title">
           Our Events
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
