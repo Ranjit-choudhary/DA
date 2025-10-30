@@ -51,7 +51,7 @@ const Events = () => {
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Join us for a series of workshops, competitions, and talks designed
-          to inspire and educate.
+          to inspire and educate. Hello.
         </p>
       </section>
 
