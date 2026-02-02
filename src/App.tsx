@@ -8,10 +8,12 @@ import Work from "./pages/Work";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login"; // Import Login
+import Admin from "./pages/Admin"; // Import Admin
 import ScrollToTop from "./components/ScrollToTop";
 import { InkCursor } from "./components/InkCursor";
 import { useIsMobile } from "./hooks/use-mobile";
-import Events from "./pages/Events"; // Import the new Events page
+import Events from "./pages/Events";
 
 const queryClient = new QueryClient();
 
@@ -31,9 +33,12 @@ const App = () => {
             <Route path="/work" element={<Work />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/events" element={<Events />} />{" "}
-            {/* Add the new route */}
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/events" element={<Events />} />
+            
+            {/* Admin Routes */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/admin" element={<Admin />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
